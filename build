@@ -1,5 +1,5 @@
 zxc -c tiny.c
 objtomac tiny.obj >tiny.mac
 m80 =tiny
-l80 tiny,csup/s,tiny/n/y/e
+l80 tiny,csup/s,tiny/n/y/e:_start
 

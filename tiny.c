@@ -4,16 +4,14 @@
  *
  * Tektonics:
  *
- * zxc -c tiny.c                   compile t.c to t.obj
- * objtomac tiny.obj >tiny.mac     convert t.obj to t.mac
- * m80 =tiny/i                     assemble t.mac to t.rel
- * l80 tiny,csup/s,tiny/n/y/e      link with csup.rel (c support library)
+ * zxc -c tiny.c                        compile t.c to t.obj
+ * objtomac tiny.obj >tiny.mac          convert t.obj to t.mac
+ * m80 =tiny/i                          assemble t.mac to t.rel
+ * l80 tiny,csup/s,tiny/n/y/e:_start    link with csup.rel (c support library)
  *
- * l80 will enter first function, as there is no "END START".
- * This is function start(). start() calls function print()
- * which transfers parameter to DE, and uses BDOS function 9
- * to print the string. Return to start() and then return
- * to CCP!
+ * l80 will enter at _start() This is function start(). start() calls
+ * function print() which transfers parameter to DE, and uses BDOS function 9
+ * to print the string. Return to start() and then return to CCP!
  *
  * Note that tiny.com is only 128 bytes long! This is as
  * small as we can get.
