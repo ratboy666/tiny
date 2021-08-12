@@ -1,6 +1,6 @@
 # tiny
 
-Very tinHI-TECH C program tiny.com compiles to 128 bytes!
+Very tiny HI-TECH C program tiny.com compiles to 128 bytes!
 
 Minimal run-time library. Good for tying in HI-TECH into other systems. You could even code BIOS parts in C
 this way! Well... maybe not.
