@@ -1,5 +1,5 @@
-zxc -c t.c
-objtomac t.obj >t.mac
-m80 =t
-l80 t,csup/s,t/n/y/e
+zxc -c tiny.c
+objtomac tiny.obj >tiny.mac
+m80 =tiny
+l80 tiny,csup/s,tiny/n/y/e
 
