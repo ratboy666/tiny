@@ -1,0 +1,5 @@
+zxc -c t.c
+objtomac t.obj >t.mac
+m80 =t
+l80 t,csup/s,t/n/y/e
+
